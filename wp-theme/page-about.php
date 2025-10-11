@@ -1,4 +1,4 @@
-<?php
+    <?php
 /*
 Template Name: About Page
 */
@@ -9,34 +9,35 @@ get_header();
     <main id="main" class="site-main">
         <section class="about-hero">
             <div class="container">
-                <h1>About Us</h1>
-                <p>Welcome to our tech corner — where innovation meets explanation.</p>
+                <h1>About Me</h1>
+                <p>Welcome to my album — where the lens meets the world.</p>
             </div>
         </section>
  
         <section class="about-intro">
             <div class="container">
-                <h2>Who We Are</h2>
-                <p>We are a team of developers, engineers, and tech enthusiasts who love to write about the fast-moving world of technology. From in-depth tutorials and product reviews to AI breakthroughs and coding best practices, we bring clarity to complexity.</p>
+                <h2>Who I am</h2>
+                <p>I’m a passionate wildlife and nature photographer, dedicated to capturing the raw beauty and spirit of the natural world. Through my lens, I seek to tell stories of the wild—showcasing moments of life, wonder, and serenity that often go unnoticed. This website is a glimpse into my journey and my deep connection with nature, inviting you to experience the world as I see it.</p>
             </div>
         </section>
  
         <section class="about-mission">
             <div class="container">
-                <h2>Our Mission</h2>
-                <p>Our goal is simple: to empower curious minds and passionate techies by delivering accurate, useful, and accessible content. Whether you're a seasoned developer or just getting started, we aim to be your go-to resource for tech knowledge.</p>
+                <h2>My Mission</h2>
+                <p>My mission is to inspire appreciation and respect for wildlife and nature by capturing its stunning beauty and fragile moments. Through my photography, I aim to raise awareness about conservation and encourage others to connect with the natural world, fostering a deeper sense of stewardship for our planet.</p>
             </div>
         </section>
        
         <section class="about-what-we-cover">
            <div class="container">
-               <h2>What We Cover</h2>
+               <h2>What I Cover</h2>
                <ul>
-                   <li>Programming tutorials and tips</li>
-                   <li>Software and app reviews</li>
-                   <li>AI, machine learning and data science insights</li>
-                   <li>Web development, DevOps , and cloud computing</li>
-                   <li>Trends in tech and industry news</li>
+                   <li>Wildlife in their natural habitats   </li>
+                   <li>Birds in flight and at rest</li>
+                   <li>Landscapes and scenic nature views</li>
+                   <li>Action shots of animals in motion</li>
+                   <li>Close-up portraits of wildlife</li>
+                   <li>Seasonal changes in forests and wilderness</li>
                </ul>
            </div>
         </section>
@@ -44,7 +45,7 @@ get_header();
         <section class="about-contact">
             <div class="container">
                  <h2>Want to Connect?</h2>
-                 <p>We love hearing from our readers! Reach out to us via our <a href="/contact">Contact page</a> or follow us on socila media to stay updated.</p>
+                 <p>We love hearing from our readers! Reach out to us via our <a href="contact">Contact page</a> or follow us on socila media to stay updated.</p>
                    
             </div>
         </section>

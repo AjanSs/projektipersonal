@@ -4,15 +4,24 @@
 <div id="container">
    <div id="inner_container">
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /images/foto1.jpg">
+           <img src="<?php echo get_template_directory_uri();?> /img/fox.png">
        </div>
 
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /images/foto2.jpg">
+           <img src="<?php echo get_template_directory_uri();?> /img/lion.webp">
        </div>
 
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /images/foto3.jpg">
+           <img src="<?php echo get_template_directory_uri();?> /img/cat.jfif">
+       </div>
+       <div class="img_container">
+           <img src="<?php echo get_template_directory_uri();?> /img/lion2.jfif">
+       </div>
+       <div class="img_container">
+           <img src="<?php echo get_template_directory_uri();?> /img/gorilla.jfif">
+       </div>
+       <div class="img_container">
+           <img src="<?php echo get_template_directory_uri();?> /img/spider.jfif">
        </div>
 
 
@@ -36,6 +45,11 @@
 <div id="content" class="site-content">
    <div id="primary" class="content-area">
      <main id="main" class="site-main">
+
+     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
 
            <section class="hero">
                 Hero

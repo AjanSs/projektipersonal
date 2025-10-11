@@ -6,7 +6,7 @@
 <div id="content" class="site-content">
    <div id="primary" class="content-area">
       <main id="main" class="site-main">
-         <h1>Blog</h1>
+         <h3>Blog</h3>
          <div class="container">
            <div class="blog-items">
 

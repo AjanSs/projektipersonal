@@ -34,6 +34,11 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
     font-size: 2em;
     margin: 0.67em 0;
   }
+
+  h3 {
+    font-size: 1em;
+    margin: 0.77em 0;
+  }
   
 
   hr {
@@ -1215,3 +1220,61 @@ a img.aligncenter {
         padding-bottom: 10px;        /* space between title and underline */
     }
     
+/* === DARK MODE OVERRIDE === */
+body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a, label, input, textarea, button {
+  color: #fff !important;
+}
+
+a {
+  color: #52344e !important; /* optional gold accent link color */
+}
+
+a:hover {
+  color: #795a74 !important; /* bright gold on hover */
+}
+
+input, textarea {
+  background-color: #111 !important;
+  border: 1px solid #444 !important;
+  color: #fff !important;
+}
+
+.main-menu,
+.top-bar,
+footer,
+.services,
+.archive aside,
+.blog aside {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+footer a {
+  color: #fff !important;
+}
+
+footer a:hover {
+  color: #795a74 !important;
+}
+
+/* Optional: adjust buttons */
+button,
+input[type="submit"],
+.contact-form button {
+  background-color: #222 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.contact-form button:hover {
+  background-color: #444 !important;
+  color: #795a74 !important;
+}

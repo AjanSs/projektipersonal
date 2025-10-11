@@ -25,6 +25,7 @@
 
     <div class="container">
         <nav class="main-menu">
+            <h1>The nature photography</h1>
             <button class="check-button">
                 <div class="menu-icon">
                     <div class="bar1"></div>
