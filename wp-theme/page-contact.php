@@ -12,7 +12,7 @@ get_header();
         <section class="contact-hero">
             <div class="container">
                 <h1>Contact Us</h1>
-                <p>We'd love to hear from you! Whether you have a question, feedback, or a collaboration idea, just drop us a message below.</p>
+                <p>I'd love to heat from you! Whether you have a question, feedback, or a collaboration idea, please write me a message below.</p>
             </div>
         </section>
 

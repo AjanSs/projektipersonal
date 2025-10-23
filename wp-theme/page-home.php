@@ -46,10 +46,23 @@
    <div id="primary" class="content-area">
      <main id="main" class="site-main">
 
-     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
+     <h2>Flora</h2>
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+
+     <h2>Fauna</h2>
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+
+     <h2>More Work</h2>
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
 
            <section class="hero">
                 Hero
@@ -82,7 +95,7 @@
                 </div>
             </section>
        <section class="home-blog">
-        <h2>Latest News</h2>
+        <h2>Latest Work</h2>
 
         <div class="container">
 
