@@ -12,16 +12,16 @@
        </div>
 
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /img/cat.jfif">
+           <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
        </div>
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /img/lion2.jfif">
+           <img src="<?php echo get_template_directory_uri();?> /img/horse.jpg">
        </div>
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /img/gorilla.jfif">
+           <img src="<?php echo get_template_directory_uri();?> /img/snake.jpg">
        </div>
        <div class="img_container">
-           <img src="<?php echo get_template_directory_uri();?> /img/spider.jfif">
+           <img src="<?php echo get_template_directory_uri();?> /img/monkey.jpg">
        </div>
 
 
@@ -46,23 +46,26 @@
    <div id="primary" class="content-area">
      <main id="main" class="site-main">
 
-     <h2>Flora</h2>
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <div class="flora"><h2>Flora</h2>
+     <img src="<?php echo get_template_directory_uri();?> /img/flower.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/tree.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/leaf.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/nature.jpg">
+   </div>
 
-     <h2>Fauna</h2>
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <div class="fauna"><h2>Fauna</h2>
+     <img src="<?php echo get_template_directory_uri();?> /img/bird.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/cow.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/lion2.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/stork.jpg">
+   </div>
 
-     <h2>More Work</h2>
+     <div class="more_work"><h2>More Work</h2>
      <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
      <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
      <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
      <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+   </div>
 
            <section class="hero">
                 Hero

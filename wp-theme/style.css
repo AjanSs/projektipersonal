@@ -49,7 +49,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   
   
   pre {
-    font-family: fantasy; /* 1 */
+    font-family: sans-serif; /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -79,7 +79,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   code,
   kbd,
   samp {
-    font-family: fantasy; /* 1 */
+    font-family: sans-serif /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -118,7 +118,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   optgroup,
   select,
   textarea {
-    font-family: fantasy; /* 1 */
+    font-family: sans-serif; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -275,8 +275,8 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
     box-sizing: border-box;
 }
 body{
-    font-family: fantasy;
-    font: normal, 21px/2.1rem, fantasy;
+    font-family: sans-serif;
+    font: normal, 21px/2.1rem, sans-serif;
 }
 h1{
     font-size: 66px;
@@ -1119,6 +1119,7 @@ a img.aligncenter {
       .img_container > img{
           width:100%;
           height:100%;
+          top: 0%;
           object-fit:scale-down;
       }
       #overlay{
@@ -1231,11 +1232,11 @@ h1, h2, h3, h4, h5, h6, p, span, li, a, label, input, textarea, button {
 }
 
 a {
-  color: #52344e !important; /* optional gold accent link color */
+  color: #94e491 !important; /* optional gold accent link color */
 }
 
 a:hover {
-  color: #795a74 !important; /* bright gold on hover */
+  color: #5baa59 !important; /* bright gold on hover */
 }
 
 input, textarea {
@@ -1256,11 +1257,11 @@ footer,
 }
 
 footer a {
-  color: #fff !important;
+  color: #94e491 !important;
 }
 
 footer a:hover {
-  color: #795a74 !important;
+  color: #94e491 !important;
 }
 
 /* Optional: adjust buttons */
@@ -1276,5 +1277,155 @@ button:hover,
 input[type="submit"]:hover,
 .contact-form button:hover {
   background-color: #444 !important;
-  color: #795a74 !important;
+  color: #5baa59 !important;
+}
+
+/* === GRAY COLOR ADJUSTMENTS === */
+
+/* Base background and text */
+body {
+  background-color: #d9d9d9 !important; /* light gray instead of black/white */
+  color: #222 !important;
+}
+
+/* Text elements */
+h1, h2, h3, h4, h5, h6, p, span, li, a, label {
+  color: #222 !important;
+}
+
+/* Links */
+a {
+  color: #333 !important;
+}
+a:hover {
+  color: #555 !important;
+}
+
+/* Inputs, textareas, and form controls */
+input, textarea {
+  background-color: #f2f2f2 !important;
+  border: 1px solid #aaa !important;
+  color: #222 !important;
+}
+
+/* Major sections */
+.main-menu,
+.top-bar,
+footer,
+.services,
+.archive aside,
+.blog aside {
+  background-color: #bfbfbf !important; /* medium gray background */
+  color: #222 !important;
+  border: none !important;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.contact-form button {
+  background-color: #888 !important;
+  color: #fff !important;
+  border: 1px solid #777 !important;
+}
+button:hover,
+input[type="submit"]:hover,
+.contact-form button:hover {
+  background-color: #666 !important;
+  color: #fff !important;
+}
+
+/* Submenus and hover states */
+.main-menu ul.sub-menu {
+  background-color: #777 !important;
+}
+.main-menu ul li a {
+  color: #222 !important;
+}
+.main-menu ul li a:hover {
+  background-color: #999 !important;
+  color: #fff !important;
+}
+
+/* Pagination */
+.nav-links .page-numbers {
+  background-color: #ccc !important;
+  color: #222 !important;
+}
+.nav-links .current {
+  background-color: #666 !important;
+  color: #fff !important;
+}
+
+/* Footer links */
+footer a {
+  color: #222 !important;
+}
+footer a:hover {
+  color: #000 !important;
+}
+
+/* Hero overlays */
+.hero .overlay {
+  background-color: rgba(100,100,100,0.4) !important;
+}
+
+/* Images with white or black backgrounds */
+img {
+  background-color: #e0e0e0 !important;
+}
+
+/* Any element that had pure white or black backgrounds */
+[class*="bg-white"],
+[class*="bg-black"],
+[style*="background-color:#fff"],
+[style*="background-color:#ffffff"],
+[style*="background-color:#000"],
+[style*="background-color:#000000"] {
+  background-color: #bfbfbf !important;
+  color: #222 !important;
+}
+
+#inner_container {
+  perspective: 1200px;
+}
+
+.img_container {
+  transform-style: preserve-3d;
+  transform: translateZ(0) scale(1);
+  transition: transform 1.2s ease-in-out, box-shadow 0.6s ease;
+}
+
+.img_container.active {
+  transform: translateZ(60px) scale(1.05);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+}
+
+.img_container.active:hover {
+  transform: translateZ(60px) scale(1.08) rotateY(3deg) rotateX(2deg);
+  box-shadow: 0 35px 50px rgba(0,0,0,0.4);
+}
+
+.flora {
+    width: 30%;
+  height: auto;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.fauna {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.more_work {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
 }
