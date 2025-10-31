@@ -1,6 +1,7 @@
 
 <?php  get_header(); ?>
 
+<h3>Here is where you can find some of my best work</h3>
 <div id="container">
    <div id="inner_container">
        <div class="img_container">
@@ -23,7 +24,9 @@
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/monkey.jpg">
        </div>
-
+       <div class="img_container">
+           <img src="<?php echo get_template_directory_uri();?> /img/babyf.jpg">
+       </div>
 
      <div id="overlay">
 
@@ -61,15 +64,12 @@
    </div>
 
      <div class="more_work"><h2>More Work</h2>
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
-     <img src="<?php echo get_template_directory_uri();?> /img/.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/stars.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/wedding.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/baby.jpg">
+     <img src="<?php echo get_template_directory_uri();?> /img/aurora.jpg">
    </div>
 
-           <section class="hero">
-                Hero
-            </section>
 
             <section class="services">
                 <h2>Services</h2>
@@ -104,11 +104,9 @@
 
            <?php 
              $args = array(
-                'post_type' => 'post',
-                'posts_per_page' => 5,
-                'category_in' => array(9,10,15),
-                'category__not_in' => array(1)
-             );
+  'post_type' => 'post',
+  'posts_per_page' => 5
+);
 
            $postlist =  new WP_Query( $args);
 
