@@ -2,28 +2,37 @@
 <?php  get_header(); ?>
 
 <h3>Here is where you can find some of my best work</h3>
+<h5>Whatever comes to mind, snowy mountains, beaches, birds, mammals, babies or grown ups, my lens captures it</h5>
 <div id="container">
    <div id="inner_container">
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/fox.png">
        </div>
-
+       
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/lion.webp">
+       </div>
+       
+       <div class="img_container">
+           <img src="<?php echo get_template_directory_uri();?> /img/dove.jpg">
        </div>
 
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/owl.jpg">
        </div>
+
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/horse.jpg">
        </div>
+
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/snake.jpg">
        </div>
+
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/monkey.jpg">
        </div>
+       
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /img/babyf.jpg">
        </div>

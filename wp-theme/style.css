@@ -49,7 +49,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   
   
   pre {
-    font-family: sans-serif; /* 1 */
+    font-family: monospace; /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -79,7 +79,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   code,
   kbd,
   samp {
-    font-family: sans-serif /* 1 */
+    font-family: monospace /* 1 */
     font-size: 1em; /* 2 */
   }
   
@@ -118,7 +118,7 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
   optgroup,
   select,
   textarea {
-    font-family: sans-serif; /* 1 */
+    font-family: monospace; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -275,8 +275,8 @@ Tags: one-column, custom-colors, custom-menu,custom-logo
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
-    font: normal, 21px/2.1rem, sans-serif;
+    font-family: monospace;
+    font: normal, 21px/2.1rem, monospace;
 }
 h1{
     font-size: 66px;
@@ -304,7 +304,7 @@ h4{
 h5{
     font-size: 22px;
     line-height: 2.2rem;
-    font-weight: bold;
+    font-weight: lighter;
 }
 p{
     font-size: 15px;
@@ -1458,4 +1458,319 @@ img {
     text-align: center;
     margin-bottom: 15px;
   }
+}
+
+.about-hero-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* distance between text and image */
+    flex-wrap: wrap;
+    margin-top: 60px; /* push section down from header */
+    margin-bottom: 50px;
+    justify-content: flex-start; /* <-- this keeps text and image together on the left */
+}
+
+.about-hero-text {
+    flex: 0 0 auto; /* only take as much space as needed */
+    padding-top: 40px;
+}
+
+.about-hero-image {
+    flex: 0 0 auto; /* image doesn’t stretch */
+    margin-top: 40px; /* move it down a bit */
+    margin-left: 20px; /* space from text */
+}
+
+.about-hero-image img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.about-hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .about-hero-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .about-hero-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .about-hero-image img {
+        width: 70%;
+    }
+}   
+
+/* === TWO SHADES OF BROWN THEME === */
+:root {
+    --brown-light: #d4f6ff;  /* light brown (background) */
+    --brown-dark: #c3edf8;   /* dark brown (header/footer/buttons) */
+    --brown-hover: #d4f6ff  ;   /* hover accent */
+}
+
+/* Body and main text */
+body {
+    background-color: var(--brown-light) !important;
+    color: #000000 !important;
+    font-family: monospace;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, p, span, li, a, label {
+    color: #000000 !important;
+}
+
+/* Links */
+a {
+    color: var(--brown-dark) !important;
+}
+a:hover {
+    color: var(--brown-hover) !important;
+}
+
+/* Header and menu */
+.main-menu,
+.top-bar {
+    background-color: var(--brown-dark) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+.main-menu ul li a {
+    color: #000000 !important;
+}
+.main-menu ul li a:hover {
+    background-color: var(--brown-hover) !important;
+    color: #000000 !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--brown-dark) !important;
+    color: #000000 !important;
+}
+footer a {
+    color: #000000 !important;
+}
+footer a:hover {
+    color: var(--brown-hover) !important;
+}
+
+/* Hero overlay */
+.hero .overlay {
+    background-color: rgba(222, 222, 222, 0.4) !important; /* semi-transparent dark brown */
+}
+
+/* Sections like services, blog sidebar */
+.services,
+.home-blog,
+.blog aside,
+.archive aside {
+    background-color: var(--brown-dark) !important;
+    color: #000000 !important;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.contact-form button {
+    background-color: var(--brown-dark) !important;
+    color: #000000 !important;
+    border: 1px solid var(--brown-light) !important;
+}
+button:hover,
+input[type="submit"]:hover,
+.contact-form button:hover {
+    background-color: var(--brown-light) !important;
+    color: var(--brown-dark) !important;
+}
+
+/* Input fields */
+input, textarea {
+    background-color: var(--brown-light) !important;
+    border: 1px solid var(--brown-dark) !important;
+    color: var(--brown-dark) !important;
+}
+
+/* Pagination */
+.nav-links .page-numbers {
+    background-color: var(--brown-light) !important;
+    color: var(--brown-dark) !important;
+}
+.nav-links .current {
+    background-color: var(--brown-dark) !important;
+    color: #000000 !important;
+}
+
+/* Images with a subtle brown background if needed */
+img {
+    background-color: var(--brown-light) !important;
+}
+
+.home-blog .latest-news h3 {
+    color: var(--brown-light) !important;  /* lighter brown text */
+}
+
+/* Fix Latest Work Titles */
+.home-blog .latest-news h3,
+.home-blog .latest-news h3 a {
+    color: #000000 !important;       /* visible against brown */
+}
+
+.home-blog .latest-news h3:hover,
+.home-blog .latest-news h3 a:hover {
+    color: #6cf5ff !important;    /* brown hover effect */
+}
+
+/* === Journal Page Styles === */
+.journal-hero {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.journal-hero-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.journal-hero-card .hero-overlay {
+    background: rgba(37, 251, 255, 0.5); /* dark brown overlay */
+    padding: 40px;
+    color: #000000;
+    width: 100%;
+}
+.journal-hero-card h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.journal-hero-card p {
+    font-size: 1.2rem;
+}
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #5ee7ff; /* dark brown */
+    color: #000000;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.read-more-btn:hover {
+    background: #9ae1e3; /* light brown */
+    color: #53e7ec;
+}
+
+/* Grid posts */
+.journal-grid .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.journal-card {
+    position: relative;
+    width: calc(33.333% - 13.33px);
+    padding-top: 20%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.journal-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.journal-card .card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(100, 233, 243, 0.6);
+    padding: 15px;
+    color: #000000;
+    text-align: center;
+    transition: background 0.3s;
+}
+.journal-card .card-overlay h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+.journal-card .card-overlay .read-more-btn {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .journal-card { width: calc(50% - 10px); }
+}
+@media (max-width: 768px) {
+    .journal-card { width: 100%; }
+}
+
+/* === Fix leftover brown colors === */
+
+/* Hero overlay */
+.hero .overlay,
+.contact-hero {
+    background-color: rgba(211, 246, 255, 0.4) !important; /* replace old brown overlay with baby blue */
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.contact-form button {
+    background-color: var(--brown-dark) !important; /* stays baby blue */
+    color: #000000 !important;
+    border: 1px solid var(--brown-light) !important;
+}
+button:hover,
+input[type="submit"]:hover,
+.contact-form button:hover {
+    background-color: var(--brown-light) !important;
+    color: var(--brown-dark) !important;
+}
+
+/* Input fields */
+input, textarea {
+    background-color: var(--brown-light) !important;
+    border: 1px solid var(--brown-dark) !important;
+    color: var(--brown-dark) !important;
+}
+
+/* Section backgrounds */
+.contact-form-section,
+.contact-hero {
+    background-color: var(--brown-light) !important;
+    color: #000000 !important;
+}
+
+/* Any leftover hardcoded brown from journal or hero cards */
+.journal-hero-card .hero-overlay,
+.journal-card .card-overlay {
+    background-color: rgba(100, 233, 243, 0.6) !important; /* baby blue overlay instead of brown */
+    color: #000000 !important;
+}
+
+/* Make input & textarea borders thicker */
+input, textarea {
+    background-color: var(--brown-light) !important; /* keeps your baby blue */
+    border: 12px solid var(--brown-dark) !important;   /* make this thicker, e.g., 3px */
+    color: var(--brown-dark) !important;
+    padding: 10px; /* optional: add some padding for comfort */
+    border-radius: 6px; /* optional: rounded corners */
 }
